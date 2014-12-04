@@ -47,3 +47,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/supersu/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/nexus/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
+# OptiPop property overides
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.bg_apps_limit=24 \
+    pm.sleep.mode=1 \
+    debug.performance.tuning=1 \
+    ro.ril.power_collapse=1 \
+    dalvik.vm.profiler=1 \
+    dalvik.vm.isa.arm.features=lpae,div \
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything \
+    persist.sys.dun.override=0
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/optipop/tools/squisher
