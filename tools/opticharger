@@ -15,7 +15,7 @@ BASE=`pwd`
 BRUTECRUSH="-brute"
 TMPDIR=/tmp/opticharge-$$
 
-. $ANDROID_BUILD_TOP/vendor/optipop/tools/colors
+. $ANDROID_BUILD_TOP/vendor/nexus/tools/colors
 
 if [ -z "$BRUTE_PNGCRUSH" ]
 then
