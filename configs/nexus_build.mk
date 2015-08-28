@@ -59,6 +59,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-filter=everything \
     dalvik.vm.dex2oat-filter=everything \
     persist.sys.dun.override=0
-
-# Squisher Location
-SQUISHER_SCRIPT := vendor/optipop/tools/squisher
